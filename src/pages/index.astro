@@ -1,32 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Main from "../components/Main.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Five Tweets At Rick's">
-  <div class="mover"></div>
-  <Header />
-  <Main />
-  <Footer />
+  <main class="h-screen bg-cover bg-center bg-no-repeat">
+    <center class="pt-[22.5%]"
+      ><h1 class="text-white text-5xl opacity-95 font-semibold margin-10">
+        Coming Soon...
+      </h1></center
+    >
+    <center
+      ><h3
+        class="text-white opacity-25 text-2xl underline font-bold mt-[5px] margin-10"
+      >
+        PRÓXIMAMENTE
+      </h3></center
+    >
+    <center class="pt-[20%]"
+      ><a href="https://youtu.be/74mcvv62SZ8?si=qmUyWJUDpenUQSv1" target="_blank"
+        ><h2 class="text-white text-2xl underline margin-10">VER TRAILER</h2></a
+      ></center
+    >
+  </main>
 </Layout>
 
-<script>
-  const imageButton = document.querySelectorAll(
-    ".imageButton"
-  ) as NodeListOf<HTMLElement>;
-
-  imageButton.forEach((btn) => {
-    console.log(btn);
-    btn.style.top = Math.floor(Math.random() * 75) + "%";
-    btn.style.left = Math.floor(Math.random() * 88) + "%";
-  });
-</script>
-
 <style>
-  :root {
-    --mouse-x: 0px;
-    --mouse-y: 0px;
+  main {
+    background-image: url(MainMenu1.png);
   }
 </style>
